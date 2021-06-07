@@ -9,4 +9,8 @@ public class Course {
     private List<Coureur> coureurs;
     private List<Arrivee> arrivees;
     private List<Abandon> abandons;
+
+    public float getEcart(Coureur c1, Coureur c2){
+        return Math.abs(c1.getTemps() - c2.getTemps());
+    }
 }
